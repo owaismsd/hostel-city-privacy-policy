@@ -12,13 +12,11 @@
             max-width: 800px;
             margin: 0 auto;
             padding: 40px 20px;
-            background-color: #f9f9f9;
+            background-color: #fff; /* Changed to white to remove the boxy background look */
         }
         .container {
-            background-color: #fff;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            /* Removed the background color, border-radius, and box-shadow to make it without border/shadow */
+            padding: 0; 
         }
         h1 { color: #6200EE; margin-bottom: 10px; }
         h2 { color: #6200EE; border-bottom: 2px solid #eee; padding-bottom: 10px; margin-top: 30px; }
@@ -33,6 +31,22 @@
         }
         a { color: #6200EE; text-decoration: none; font-weight: bold; }
         a:hover { text-decoration: underline; }
+
+        /* Added simple responsiveness for mobile devices */
+        @media (max-width: 600px) {
+            body {
+                padding: 20px 15px;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.3em;
+            }
+            .contact-box {
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 <body>
